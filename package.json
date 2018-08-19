@@ -1,5 +1,5 @@
 {
-  "name": "user-departments-practice",
+  "name": "acme-users-things-react",
   "version": "1.0.0",
   "description": "",
   "main": "./db/index.js",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress",
+    "postinstall": "npm run webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start:dev": "npm run webpack -- --watch --mode=development & DATABASE_URL=postgres://localhost/acmeusersthings nodemon ./db/index.js --ignore src/ --ignore dist"
