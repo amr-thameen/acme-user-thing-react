@@ -26,7 +26,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start:dev": "npm run webpack -- --watch --mode=development & DATABASE_URL=postgres://localhost/acmeusersthings nodemon ./db/index.js --ignore src/ --ignore dist"
