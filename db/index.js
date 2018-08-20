@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const conn = new Sequelize(process.env.DATABASE_URL)
 const express = require('express')
-let port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 const path = require('path')
 
 //App
